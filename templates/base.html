@@ -1,56 +1,9 @@
 <!doctype html>
 <html>
 
-<style>
-    body {
-        background-color: #262626;
-        overflow: hidden;
-    }
 
-    .starfield {
-        background-color: #262626;
-    }
-
-    .star0 {
-        height: 1px;
-        width: 1px;
-        opacity: 1;
-        position: absolute;
-    }
-
-    .star1 {
-        height: 2px;
-        width: 2px;
-        border-radius: 50%;
-        opacity: 1;
-        position: absolute;
-    }
-
-    .star2 {
-        height: 3px;
-        width: 3px;
-        border-radius: 50%;
-        opacity: 1;
-        position: absolute;
-    }
-
-    .star3 {
-        height: 4px;
-        width: 4px;
-        border-radius: 50%;
-        opacity: 1;
-        position: absolute;
-    }
-
-    .star4 {
-        height: 4px;
-        width: 4px;
-        border-radius: 50%;
-        opacity: 1;
-        position: absolute;
-    }
-</style>
-
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% block css %}{% endblock %}
 <head>
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -66,12 +19,12 @@
     
     
 
-    
+    <div id="universe"></div>
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Rishi Kumar</a>
+            <a class="navbar-brand" href="/">Rishi Kumar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -92,7 +45,7 @@
     {% endblock %}
 
 
-    <div id="universe"></div>
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -102,38 +55,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script>
-        var layerCount = 6;
-        var starCount = 50;
-        var universe = document.getElementById('universe');
-        var w = window;
-        var d = document;
-        var e = d.documentElement;
-        var g = d.getElementsByTagName('body')[0];
-        var width = w.innerWidth || e.clientWidth || g.clientWidth;
-        var height = w.innerHeight || e.clientHeight || g.clientHeight;
-        for (var l = 0; l < layerCount; ++l) {
-            var layer = document.createElement('div');
-            layer.setAttribute('id', 'layer' + l);
-            layer.setAttribute('class', 'starfield');
-            universe.appendChild(layer);
-            for (var i = 0; i < starCount; ++i) {
-                var xpos = Math.round(Math.random() * width);
-                var ypos = Math.round(Math.random() * height);
-                for (var s = 0; s < 2; ++s) {
-                    var star = document.createElement('div');
-                    star.setAttribute('class', 'star' + l);
-                    star.style.webkitTransform = 'translate(' + (xpos + s * width) + 'px, ' + ypos + 'px)';
-                    star.style.transform = 'translate(' + (xpos + s * width) + 'px, ' + ypos + 'px)';
-                    star.style.backgroundColor = 'black';//rgb(' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ')';
-                    layer.appendChild(star);
-                }
-            }
-            layer.animate([{ transform: 'translate3d(0, 0, 0)' },
-            { transform: 'translate3d(-' + width + 'px, 0, 0)' }],
-                { duration: Math.pow(2, layerCount - l) * 4000, iterations: Infinity });
-        }
-    </script>
+    <script src="{{ url_for('static', filename='js/stars.js') }}"></script>
     
 </body>
 
