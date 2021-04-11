@@ -3,12 +3,12 @@
 
 <style>
     body {
-        background-color: #b61924;
+        background-color: #262626;
         overflow: hidden;
     }
 
     .starfield {
-        background-color: #b61924;
+        background-color: #262626;
     }
 
     .star0 {
@@ -103,8 +103,8 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script>
-        var layerCount = 5;
-        var starCount = 100;
+        var layerCount = 6;
+        var starCount = 50;
         var universe = document.getElementById('universe');
         var w = window;
         var d = document;
@@ -131,7 +131,7 @@
             }
             layer.animate([{ transform: 'translate3d(0, 0, 0)' },
             { transform: 'translate3d(-' + width + 'px, 0, 0)' }],
-                { duration: Math.pow(2, layerCount - l) * 1000, iterations: Infinity });
+                { duration: Math.pow(2, layerCount - l) * 4000, iterations: Infinity });
         }
     </script>
     
