@@ -7,6 +7,7 @@ var layerCount = 6;
         var g = d.getElementsByTagName('body')[0];
         var width = w.innerWidth || e.clientWidth || g.clientWidth;
         var height = w.innerHeight || e.clientHeight || g.clientHeight;
+        
         for (var l = 0; l < layerCount; ++l) {
             var layer = document.createElement('div');
             layer.setAttribute('id', 'layer' + l);

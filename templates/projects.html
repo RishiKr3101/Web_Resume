@@ -1,8 +1,137 @@
 {% extends "base.html" %}
+
+{% block css %}
+<style>
+    p {
+        
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#main-container_2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 15%;
+  margin: 0 auto;
+  width: 700px;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  #main-container_2 {
+    top: 0%;
+    width: 100%;
+    padding: 30px;
+  }
+}
+
+#universe
+{
+  position: fixed;
+}
+#description_2 {
+  margin: 10px 0 0 0;
+}
+</style>
+{% endblock %}
+
 {% block title %}Projects{% endblock %}
 {% block content %}
-<div id="main-container">
+<div id="main-container_2">
 
     <h1>Projects</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <ul>
+        <li>
+            <h2>Chat App (GUI)</h2>
+            <br>
+            
+            <div id="description_2">
+                <p>A Basic GUI using Python (tkinter, sockets) which helps users on the same network to have a conversation through text</p>
+                <p>Used Tkinter to build a decent looking GUI for a smooth experience which shows the clients name on top and shows message along with the name. Used Sockets for building the server, and sending and recieving signalsbetween clients and server which tells the client who joined the server, who sent a message, who got disconnected and number of active users</p>
+                <p>Check out the project : <a href="https://github.com/RishiKr3101/ChatApp" target="_blank">HERE</a></p>
+            </div>
+        </li>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <li>
+            <h2>Snake Game</h2>
+            
+            <br>
+            <div id="description_2">
+                <p>A Basic 2D game using Python (pygame) vintage style</p>
+                <p>Used Pygame to make Game interface and used Data Structure and Algo for developing it.Contains Bonus and Instruction screen along with the scoreboard. Try beating The Highscore. </p>
+                <p>Check out the project : <a href="https://github.com/RishiKr3101/Snake_Game" target="_blank">HERE</a></p>
+            </div>
+        </li>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <li>
+            <h2>Chat App (GUI)</h2>
+            
+            <br>
+            <div id="description_2">
+                <p>A Basic GUI using Python (tkinter, sockets) which helps users on the same network to have a conversation
+                    through text</p>
+                <p>Used Tkinter to build a decent looking GUI for a smooth experience which shows the clients name on top and
+                    shows message along with the name. Used Sockets for building the server, and sending and recieving
+                    signalsbetween clients and server which tells the client who joined the server, who sent a message, who got
+                    disconnected and number of active users</p>
+                <p>Check out the project : <a href="https://github.com/RishiKr3101/ChatApp" target="_blank">HERE</a></p>
+            </div>
+        </li>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <li>
+            <h2>Chat App (GUI)</h2>
+            
+            <br>
+            <div id="description_2">
+                <p>A Basic GUI using Python (tkinter, sockets) which helps users on the same network to have a conversation
+                    through text</p>
+                <p>Used Tkinter to build a decent looking GUI for a smooth experience which shows the clients name on top and
+                    shows message along with the name. Used Sockets for building the server, and sending and recieving
+                    signalsbetween clients and server which tells the client who joined the server, who sent a message, who got
+                    disconnected and number of active users</p>
+                <p>Check out the project : <a href="https://github.com/RishiKr3101/ChatApp" target="_blank">HERE</a></p>
+            </div>
+        </li>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <li>
+            <h2>Chat App (GUI)</h2>
+            
+            <br>
+            <div id="description_2">
+                <p>A Basic GUI using Python (tkinter, sockets) which helps users on the same network to have a conversation
+                    through text</p>
+                <p>Used Tkinter to build a decent looking GUI for a smooth experience which shows the clients name on top and
+                    shows message along with the name. Used Sockets for building the server, and sending and recieving
+                    signalsbetween clients and server which tells the client who joined the server, who sent a message, who got
+                    disconnected and number of active users</p>
+                <p>Check out the project : <a href="https://github.com/RishiKr3101/ChatApp" target="_blank">HERE</a></p>
+            </div>
+        </li>
+    </ul>
 </div>
 {% endblock %}
