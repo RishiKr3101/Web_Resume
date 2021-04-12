@@ -3,7 +3,30 @@
 
 {% block css %} 
 <style>
-    
+  
+   h1 {
+  font-size: 40px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+
+
+a:hover {
+  color: #20023c;
+}
 </style>
 {% endblock %}
 
@@ -19,23 +42,23 @@
     <h2>
         My name is Rishi Kumar.
     </h2>
-    <img id="image" src="{{ url_for('static', filename='Rishi_img.jpeg') }}"" />
+    <img id="image" src="static/assets/Rishi_img.jpeg" />
     <ul id="social-media-icons">
         <li>
             <a href="https://instagram.com/its.rishii_?igshid=bapedcym0e1m" target="_blank"><img class="icon"
-                    src="https://www.flaticon.com/svg/vstatic/svg/1384/1384015.svg?token=exp=1618163878~hmac=34192bf4b3263eb23880630196a49102" /></a>
+                    src="static/assets/instagram.png" /></a>
         </li>
         <li>
             <a href="https://www.linkedin.com/in/rishi-kumar-7468731a1" target="_blank"><img class="icon"
-                    src="https://www.flaticon.com/premium-icon/icons/svg/3128/3128219.svg" /></a>
+                    src="static/assets/linkedin.png" /></a>
         </li>
         <li>
             <a href="https://twitter.com/itsrishii_?s=09" target="_blank"><img class="icon"
-                    src="https://www.flaticon.com/svg/vstatic/svg/733/733635.svg?token=exp=1618171736~hmac=07695178a87631b07164d6b3edc82c1b" /></a>
+                    src="static/assets/twitter.png" /></a>
         </li>
         <li>
             <a href="https://github.com/RishiKr3101" target="_blank"><img class="icon"
-                    src="https://www.flaticon.com/svg/vstatic/svg/2111/2111425.svg?token=exp=1618164013~hmac=d3648caf1d14c90eb4dbdeeceb9a147b" /></a>
+                    src="static/assets/github.png" /></a>
         </li>
     </ul>
     <div id="description">
@@ -49,7 +72,8 @@
     </div>
 </div>
 
-
+<script src="static/js/bootstrap.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
 
 <script>
     window.onload = () => {

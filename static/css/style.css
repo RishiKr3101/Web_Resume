@@ -1,42 +1,15 @@
-    body {
-  color: rgb(28, 28, 30);
-  background-color: #f6f9fc;
+  body {
+  color: rgb(0, 0, 0) !important;
+  background-color: rgb(255, 255, 255) !important;
 }
 
 
-
-h1 {
-  font-size: 40px;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 400;
-  margin: 0;
-}
-
-h2 {
-  font-size: 20px;
-  font-weight: 400;
-  margin: 0;
-}
-
-p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-a {
-  color: #6772e5;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #02203C;
-}
 
 #main-container {
   position: absolute;
   left: 0;
   right: 0;
-  top: 15%;
+  top: 10%;
   margin: 0 auto;
   width: 500px;
   text-align: center;
@@ -48,12 +21,10 @@ a:hover {
     width: 100%;
     padding: 30px;
   }
+
 }
 
-#nav-bar
-{
-  position: fixed;
-}
+
 
 .icon:hover {
   transform: scale(1.1);
@@ -69,6 +40,7 @@ a:hover {
 #image {
   margin: 10px 0;
   width: 200px;
+  
 }
 
 #social-media-icons {
@@ -142,3 +114,5 @@ a:hover {
         opacity: 1;
         position: absolute;
     }
+
+

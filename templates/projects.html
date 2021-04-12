@@ -2,17 +2,65 @@
 
 {% block css %}
 <style>
+  
+h1 
+{
+  font-size: 60px !important;
+  font-family: 'Ubuntu', sans-serif !important;
+  font-weight: 400;
+  margin: 0;
+}
+
+h2 {
+  font-size: 50px !important;
+  font-weight: 400;
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #9a02f1 ;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #20023c;
+}
+
+
+    h2
+{
+    font-size: 30px;
+    font-style: italic;
+    
+}
     p {
         
   font-size: 20px;
   margin-bottom: 20px;
 }
 
+#my-div {
+    position: relative;
+    background-color: rgb(238, 238, 240);
+    width: 500px;
+    height: 500px;
+}
+
+
+
+
+
+
 #main-container_2 {
   position: absolute;
   left: 0;
   right: 0;
-  top: 15%;
+  top: 10% !important;
   margin: 0 auto;
   width: 700px;
   text-align: center;
@@ -25,6 +73,7 @@
     padding: 30px;
   }
 }
+
 
 #universe
 {
@@ -40,14 +89,17 @@
 {% block content %}
 <div id="main-container_2">
 
-    <h1>Projects</h1>
+    <h1>Projects &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h1>
+    <br>
     <br>
     <br>
     <br>
     <br>
     <ul>
-        <li>
+        <li id="my-div">
             <h2>Chat App (GUI)</h2>
+            <br>
+            <br>
             <br>
             
             <div id="description_2">
@@ -62,9 +114,10 @@
         <br>
         <br>
 
-        <li>
+        <li id="my-div">
             <h2>Snake Game</h2>
-            
+            <br>
+            <br>
             <br>
             <div id="description_2">
                 <p>A Basic 2D game using Python (pygame) vintage style</p>
@@ -78,18 +131,15 @@
         <br>
         <br>
 
-        <li>
-            <h2>Chat App (GUI)</h2>
-            
+        <li id="my-div">
+            <h2>Shooting Balls</h2>
+            <br>
+            <br>
             <br>
             <div id="description_2">
-                <p>A Basic GUI using Python (tkinter, sockets) which helps users on the same network to have a conversation
-                    through text</p>
-                <p>Used Tkinter to build a decent looking GUI for a smooth experience which shows the clients name on top and
-                    shows message along with the name. Used Sockets for building the server, and sending and recieving
-                    signalsbetween clients and server which tells the client who joined the server, who sent a message, who got
-                    disconnected and number of active users</p>
-                <p>Check out the project : <a href="https://github.com/RishiKr3101/ChatApp" target="_blank">HERE</a></p>
+                <p>A detailed 2D Game made with Unity3D and C# for Android.</C></p>
+                <p>Used Unity to build the scenes and C# to write the scripts for the game it comes with basic details like sfter every target hit theirs a Screen Shake animation made using C# script along with Unity Particle System which makes it even better. It contains different scenes, Levels and also a scoreboard to keep track of how you perform.</p>
+                <p>Check out the project : <a href="https://github.com/RishiKr3101/Shooting-Balls" target="_blank">HERE</a></p>
             </div>
         </li>
         <br>
@@ -98,18 +148,15 @@
         <br>
         <br>
 
-        <li>
-            <h2>Chat App (GUI)</h2>
-            
+        <li id="my-div">
+            <h2>Algo Visualiser</h2>
+            <br>
+            <br>
             <br>
             <div id="description_2">
-                <p>A Basic GUI using Python (tkinter, sockets) which helps users on the same network to have a conversation
-                    through text</p>
-                <p>Used Tkinter to build a decent looking GUI for a smooth experience which shows the clients name on top and
-                    shows message along with the name. Used Sockets for building the server, and sending and recieving
-                    signalsbetween clients and server which tells the client who joined the server, who sent a message, who got
-                    disconnected and number of active users</p>
-                <p>Check out the project : <a href="https://github.com/RishiKr3101/ChatApp" target="_blank">HERE</a></p>
+                <p>A Basic GUI using Python (turtle/ tkinter) to visualise any algorithm for better understanding.</p>
+                <p>Used Turtle for the main Window which displays the algorithm at work and used Tkinter for user to enter their custom input. By using various algorithm made it possible to visualise it so that the user can understand it better</p>
+                <p>Didn't upload the Code yet but can be seen on linkedin<a href="https://www.linkedin.com/in/rishi-kumar-7468731a1" target="_blank">HERE</a></p>
             </div>
         </li>
         <br>
@@ -118,18 +165,15 @@
         <br>
         <br>
 
-        <li>
-            <h2>Chat App (GUI)</h2>
-            
+        <li id="my-div">
+            <h2>Other Minor Projects</h2>
+            <br>
+            <br>
             <br>
             <div id="description_2">
-                <p>A Basic GUI using Python (tkinter, sockets) which helps users on the same network to have a conversation
-                    through text</p>
-                <p>Used Tkinter to build a decent looking GUI for a smooth experience which shows the clients name on top and
-                    shows message along with the name. Used Sockets for building the server, and sending and recieving
-                    signalsbetween clients and server which tells the client who joined the server, who sent a message, who got
-                    disconnected and number of active users</p>
-                <p>Check out the project : <a href="https://github.com/RishiKr3101/ChatApp" target="_blank">HERE</a></p>
+                <p>You can check my other Minor Projects on my Github Profile or LinkedIn profile.</p>
+                <p>Thankyou</p>
+                <p>Check out other projects : <a href="https://github.com/RishiKr3101" target="_blank">HERE</a></p>
             </div>
         </li>
     </ul>
