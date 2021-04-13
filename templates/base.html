@@ -4,7 +4,18 @@
 
 <link rel="stylesheet" href="static/css/style.css">
 <style>
-  
+  #Nav-Title{
+      font-size: 25px;
+
+  }
+  #nav-content{
+      position: absolute;
+      right: 0;
+  }
+  #nav-list
+  {
+      font-size: 20px;
+  }
 </style>
 {% block css %}{% endblock %}
 <head>
@@ -27,17 +38,17 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #050505;" id="nav-bar">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">Rishi Kumar</a>
+            <a class="navbar-brand" id="Nav-Title" href="/">Rishi Kumar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" href="/">Home</a>
-                    <a class="nav-link" href="/projects">Projects</a>
-                    <a class="nav-link" href="/about">About</a>
-                    <a class="nav-link" href="/contacts">Contacts</a>
+                <div class="navbar-nav" id="nav-content">
+                    <a class="nav-link" id="nav-list" href="/">Home</a>
+                    <a class="nav-link" id="nav-list" href="/projects">Projects</a>
+                    <a class="nav-link" id="nav-list" href="/about">About</a>
+                    <a class="nav-link" id="nav-list" href="/contacts">Contacts</a>
                 </div>
             </div>
         </div>
