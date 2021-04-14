@@ -40,12 +40,19 @@ p {
 
 #my-div {
     position: relative;
-    background-color: rgb(249, 249, 250);
+    background-color: rgb(227, 227, 245);
     width: 500px;
-    height: 500px;
+    height: 520px;
 }
 
+.fade-in{
+  opacity:0;
+  transition: opacity 250ms ease-in;
+}
 
+.fade-in.appear{
+  opacity: 1;
+}
 
 
 
@@ -94,7 +101,7 @@ p {
     <br>
     <br>
     <ul>
-        <li id="my-div">
+        <li class="icon fade-in" id="my-div">
             <h2>Chat App (GUI)</h2>
             <br>
             <br>
@@ -112,7 +119,7 @@ p {
         <br>
         <br>
 
-        <li id="my-div">
+        <li class="icon fade-in" id="my-div">
             <h2>Snake Game</h2>
             <br>
             <br>
@@ -129,7 +136,7 @@ p {
         <br>
         <br>
 
-        <li id="my-div">
+        <li class="icon fade-in" id="my-div">
             <h2>Shooting Balls</h2>
             <br>
             <br>
@@ -146,7 +153,7 @@ p {
         <br>
         <br>
 
-        <li id="my-div">
+        <li class="icon fade-in" id="my-div">
             <h2>Algo Visualiser</h2>
             <br>
             <br>
@@ -163,7 +170,7 @@ p {
         <br>
         <br>
 
-        <li id="my-div">
+        <li class="icon fade-in" id="my-div">
             <h2>Other Minor Projects</h2>
             <br>
             <br>
