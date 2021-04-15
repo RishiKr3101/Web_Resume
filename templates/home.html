@@ -8,6 +8,15 @@
         top: 15% !important;
 
     }
+
+    .fade-in{
+  opacity:0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear{
+  opacity: 1;
+}
   
    h1 {
   font-size: 50px !important;
@@ -42,7 +51,7 @@ a:hover {
 {% block content %}
 
 
-<div id="main-container">
+<div class="fade-in" id="main-container">
     <h1>Hello | Bonjour</h1>
     <h2>
         My name is Rishi Kumar.

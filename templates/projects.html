@@ -3,39 +3,42 @@
 {% block css %}
 <style>
   
-h1 
-{
-  font-size: 60px !important;
-  font-family: 'Ubuntu', sans-serif !important;
-  font-weight: 400;
-  margin: 0;
-}
+h1 {
+        font-size: 40px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+        margin: 0;
+    }
 
-h2 {
-  font-size: 50px !important;
-  font-weight: 400;
-  font-style: italic;
-  margin: 0;
-}
-
-p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-a {
-  color: #9a02f1 ;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #20023c;
-}
-
-p {
+    h2 {
         
-  font-size: 20px;
-  margin-bottom: 20px;
+        font-size: 30px !important;
+        font-weight: 400;
+        margin: 0;
+    }
+    h3 {
+        
+        font-size: 21px !important;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    p {
+        font-size: 18px;
+        margin-bottom: 10px !important;
+    }
+
+    
+
+    a:hover {
+        color: #20023c;
+    }
+
+    * {
+  box-sizing: border-box;
+}
+#main-container_2 h1{
+    font-size: 52px !important ;
 }
 
 #my-div {
@@ -91,6 +94,80 @@ p {
 #description_2 {
   margin: 10px 0 0 0;
 }
+
+body .Cardscontainer{
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.Cardscontainer{
+    position: relative;
+    margin-right: -200px;
+    height: 100vh;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.Cardscontainer .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: rgb(233, 233, 233);
+    text-align: center;
+    
+
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(60, 0, 255, 0.445);
+    transition: 0.3s ease-in-out;
+}
+
+
+.Cardscontainer .card .TitleBx {
+    position: relative;
+    width: 250px;
+    height: 160px;
+    top: -10px;
+    left: 10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(84, 32, 255, 0.5);
+}
+
+
+
+.Cardscontainer .card .content {
+    position: relative;
+    top: 10%;
+    left: -10%;
+    
+    padding: 10px 15px;
+    text-align: left;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.Cardscontainer .card:hover{
+    height: 435px;
+}
+
+.Cardscontainer .card:hover .content{
+    
+    visibility: visible;
+    opacity: 1;
+    margin-top: -50px;
+    transition-delay: 0.3s;
+}
 </style>
 {% endblock %}
 
@@ -99,92 +176,127 @@ p {
 <div id="main-container_2">
 
     <h1>Projects &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h1>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <ul>
-        <li class="icon fade-in" id="my-div">
-            <h2>Chat App (GUI)</h2>
-            <br>
-            <br>
-            <br>
-            
-            <div id="description_2">
-                <p>A Basic GUI using Python (tkinter, sockets) which helps users on the same network to have a conversation through text</p>
-                <p>Used Tkinter to build a decent looking GUI for a smooth experience which shows the clients name on top and shows message along with the name. Used Sockets for building the server, and sending and recieving signalsbetween clients and server which tells the client who joined the server, who sent a message, who got disconnected and number of active users</p>
-                <p>Check out the project : <a href="https://github.com/RishiKr3101/ChatApp" target="_blank">HERE</a></p>
-            </div>
-        </li>
+    
+</div>
+<div class="Cardscontainer">
+  <div class="card fade-in">
+    <div class="TitleBx">
+      <h2>Chat App</h2>
+    </div>
+    <div class="content">
+      
+        
+        A GUI using Python (tkinter, sockets) helps users on the same network to Chat
         <br>
         <br>
-        <br>
-        <br>
-        <br>
+        Used Tkinter to build a  GUI for a smooth experience  shows the clients name on top and shows message
+        along as well. Used Sockets for building the server, sending and recieving messages
+        which tells the client who joined the server, who sent a message, who got disconnected and number of active users
+        Check out the project : <a href="https://github.com/RishiKr3101/ChatApp" target="_blank">HERE</a>
+        
 
-        <li class="icon box fade-in" id="my-div">
-            <h2>Snake Game</h2>
-            <br>
-            <br>
-            <br>
-            <div id="description_2">
-                <p>A Basic 2D game using Python (pygame) vintage style</p>
-                <p>Used Pygame to make Game interface and used Data Structure and Algo for developing it.Contains Bonus and Instruction screen along with the scoreboard. Try beating The Highscore. </p>
-                <p>Check out the project : <a href="https://github.com/RishiKr3101/Snake_Game" target="_blank">HERE</a></p>
-            </div>
-        </li>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+      <br>
+      <br>
 
-        <li class="icon box fade-in" id="my-div">
-            <h2>Shooting Balls</h2>
-            <br>
-            <br>
-            <br>
-            <div id="description_2">
-                <p>A detailed 2D Game made with Unity3D and C# for Android.</C></p>
-                <p>Used Unity to build the scenes and C# to write the scripts for the game it comes with basic details like sfter every target hit theirs a Screen Shake animation made using C# script along with Unity Particle System which makes it even better. It contains different scenes, Levels and also a scoreboard to keep track of how you perform.</p>
-                <p>Check out the project : <a href="https://github.com/RishiKr3101/Shooting-Balls" target="_blank">HERE</a></p>
-            </div>
-        </li>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+    </div>
+  </div>
+  <div class="card fade-in">
+    <div class="TitleBx">
+      <h2>Snake Game</h2>
+    </div>
+    <div class="content">
+      <br>
+      <br>
+      <br>
+      
 
-        <li class="icon box fade-in" id="my-div">
-            <h2>Algo Visualiser</h2>
-            <br>
-            <br>
-            <br>
-            <div id="description_2">
-                <p>A Basic GUI using Python (turtle/ tkinter) to visualise any algorithm for better understanding.</p>
-                <p>Used Turtle for the main Window which displays the algorithm at work and used Tkinter for user to enter their custom input. By using various algorithm made it possible to visualise it so that the user can understand it better</p>
-                <p>Didn't upload the Code yet but can be seen on linkedin<a href="https://www.linkedin.com/in/rishi-kumar-7468731a1" target="_blank">HERE</a></p>
-            </div>
-        </li>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+      A Basic 2D game using Python (pygame) vintage style
+      <br>
+      <br>
+      Used Pygame to make Game interface and used Data Structure and Algo for developing it.Contains Bonus and Instruction
+      screen along with the scoreboard. Try beating The Highscore.
+      Check out the project : <a href="https://github.com/RishiKr3101/Snake_Game" target="_blank">HERE</a>
+      <br>
+      <br>
+      <br>
+      <br>
 
-        <li class="icon box fade-in" id="my-div">
-            <h2>Other Minor Projects</h2>
-            <br>
-            <br>
-            <br>
-            <div id="description_2">
-                <p>You can check my other Minor Projects on my Github Profile or LinkedIn profile.</p>
-                <p>Thankyou</p>
-                <p>Check out other projects : <a href="https://github.com/RishiKr3101" target="_blank">HERE</a></p>
-            </div>
-        </li>
-    </ul>
+    </div>
+  </div>
+  <div class="card fade-in">
+    <div class="TitleBx">
+      <h2>Shooting-Balls</h2>
+    </div>
+    <div class="content">
+      <br>
+
+      A detailed 2D Game made with Unity3D and C# for Android.
+      
+      <br>
+
+      Used Unity to build the scenes and C# to write the scripts for the game it comes with basic details like sfter every
+      target hit theirs a Screen Shake animation made using C# script along with Unity Particle System which makes it even
+      better. It contains different scenes, Levels and also a scoreboard to keep track of how you perform.
+      
+      Check out the project : <a href="https://github.com/RishiKr3101/Shooting-Balls" target="_blank">HERE</a>
+      <br>
+      <br>
+      
+
+    </div>
+  </div>
+  <div class="card fade-in">
+    <div class="TitleBx">
+      <h2>Algo Visualiser</h2>
+    </div>
+    <div class="content">
+      <br>
+      
+
+      
+
+      A Basic GUI using Python (turtle/ tkinter) to visualise any algorithm for better understanding.
+      
+      Used Turtle for the main Window which displays the algorithm at work and used Tkinter for user to enter their custom
+      input. By using various algorithm made it possible to visualise it so that the user can understand it better
+      
+      Didn't upload the Code yet but can be seen on linkedin <a href="https://www.linkedin.com/in/rishi-kumar-7468731a1" target="_blank">HERE</a>
+      
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+    </div>
+  </div>
+  <div class="card fade-in">
+    <div class="TitleBx">
+      <h2>Minor Projects</h2>
+    </div>
+    <div class="content">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      You can check my other Minor Projects on my Github Profile or LinkedIn profile.
+      <br>
+      Thankyou
+      <br>
+      Check out other projects : <a href="https://github.com/RishiKr3101" target="_blank">HERE</a>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+  </div>
 </div>
 {% endblock %}
