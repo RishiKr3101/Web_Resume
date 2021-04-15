@@ -36,6 +36,9 @@
     * {
   box-sizing: border-box;
 }
+#main-container h1{
+    font-size: 52px !important ;
+}
 
 body .Cardscontainer{
   font-family: Arial, Helvetica, sans-serif;
@@ -47,6 +50,7 @@ body .Cardscontainer{
 
 .Cardscontainer{
     position: relative;
+    margin-right: -200px;
     height: 100vh;
     width: 1100px;
     display: flex;
@@ -114,24 +118,28 @@ body .Cardscontainer{
 {% endblock %}
 {% block title %}About{% endblock %}
 {% block content %}
+<div id="main-container"><h1>About</h1></div>
 <div class="Cardscontainer">
-    <div class="card">
+    <div class="card fade-in">
         <div class="TitleBx">
             <h2>SKILLS</h2>
         </div>
         <div class="content">
             <ul>
-                <li>Data Structure & Algorithms (Java, Python)</li>
+                <br>
+                <li> Data Structure & Algorithms (Java, Python)</li>
                 <li>Flask (Framework Python)</li>
                 <li>Django (Framework Python)</li>
                 <li>Game Development (Unity3D and C# or Pygame)</li>
                 <li>App Development (Kivy Python)</li>
                 <li>Machine Learning(Python)</li>
                 <li>Other Skils; Linux, Git, Computer Networks, MySQL</li>
+                <br>
+
             </ul>
         </div>
     </div>
-    <div class="card">
+    <div class="card fade-in">
         <div class="TitleBx">
             <h2>ORGANIZATIONS</h2>
         </div>
@@ -148,7 +156,7 @@ body .Cardscontainer{
             </ul>
         </div>
     </div>
-    <div class="card">
+    <div class="card fade-in">
         <div class="TitleBx">
             <h2>CERTIFICATES</h2>
         </div>
@@ -179,24 +187,42 @@ body .Cardscontainer{
             </ul>
         </div>
     </div>
-    <div class="card">
+    <div class="card fade-in">
         <div class="TitleBx">
             <h2>INTERESTS</h2>
         </div>
         <div class="content">
+            <br>
+            <br>
+            <br>
+            <br>
+
             <ul>
                 <li><p>Competitive Coding</p></li>
                 <li><p>Video Editing</p></li>
                 <li><p>Photo Editing</p></li>
                 <li><p>Public Speaking</p></li>
             </ul>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
         </div>
     </div>
-    <div class="card">
+    <div class="card fade-in">
         <div class="TitleBx">
             <h2>LANGUAGES</h2>
         </div>
         <div class="content">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
             <ul>
                 <li>
                     <h3>English</h3>
@@ -204,13 +230,21 @@ body .Cardscontainer{
                 </li>
                 
             </ul>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
         </div>
     </div>
-    <div class="card">
+    <div class="card fade-in">
         <div class="TitleBx">
             <h2>CONTACTS</h2>
         </div>
         <div class="content">
+           
+            <br>
             <ul>
                 <li>
                     <h2>Emails</h2>
@@ -223,6 +257,9 @@ body .Cardscontainer{
                     <br>
                     <p>Institution:</p> rkumar4_be19@thapar.edu
                 </li>
+                <br>
+                <br>
+                <br>
             
             </ul>
         </div>
