@@ -1,7 +1,7 @@
 # Web Resume
 
-# Description
-<br>
+## Description
+
 A web resume made using flask and (Html,css,JS)  
 
 
@@ -9,7 +9,8 @@ A web resume made using flask and (Html,css,JS)
 
 ~ Install Flask : open cmd prompt or terminal and enter command " pip install flask " if you have Python 2 or less installed else enter command "pip3 install flask" 
 <br>
-
+<br>
+<br>
 
 ## step 2
 
