@@ -5,8 +5,7 @@
 A web resume made using flask and (Html,css,JS)  
 <br>
 <br>
-<br>
-<br>
+
 
 ## step 1
 
